@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 앱</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pages.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fridge-title">레시피 목록</h1>
+        <ul>
+            {% if recipes %}
+                {% for recipe in recipes %}
+                    <li class="ingredient">
+                        <span>{{ recipe.RCP_NM }}</span>
+                        <span class="quantity">{{ recipe.RCP_PAT2 }}</span>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <p>No recipes found.</p>
+            {% endif %}
+        </ul>
+    </div>
+</body>
+</html>

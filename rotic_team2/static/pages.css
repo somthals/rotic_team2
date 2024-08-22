@@ -1,0 +1,366 @@
+/* 공통 스타일 */
+.container {
+    position: relative;
+    width: 393px;
+    height: 852px;
+    background: #FFFFFF;
+    border-radius: 48px;
+  }
+  
+  .absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Home Indicator */
+  .home-indicator {
+    position: absolute;
+    height: 21px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .home-indicator-bar {
+    width: 139px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(50%) scaleX(-1);
+  }
+  
+  /* Status Bar */
+  .status-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 54px;
+  }
+  
+  .time {
+    position: absolute;
+    left: 0;
+    right: 64.25%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 590;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .levels {
+    position: absolute;
+    left: 64.25%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .battery {
+    position: absolute;
+    left: 57.65%;
+    right: 22.9%;
+    top: 42.59%;
+    bottom: 33.33%;
+  }
+  
+  .battery-border {
+    position: absolute;
+    width: 25px;
+    height: 54px;
+    border: 1px solid #000000;
+    border-radius: 4.3px;
+    opacity: 0.35;
+  }
+  
+  .battery-cap {
+    position: absolute;
+    width: 1.33px;
+    background: #000000;
+    opacity: 0.4;
+  }
+  
+  .battery-capacity {
+    position: absolute;
+    width: 21px;
+    background: #000000;
+    border-radius: 2.5px;
+  }
+  
+  .wifi {
+    position: absolute;
+    width: 17.14px;
+    left: calc(50% - 17.14px/2 - 4.98px);
+    top: 43.77%;
+    bottom: 33.4%;
+    background: #000000;
+  }
+  
+  .cellular-connection {
+    position: absolute;
+    width: 19.2px;
+    left: calc(50% - 19.2px/2 - 30.65px);
+    top: 43.58%;
+    bottom: 33.77%;
+    background: #000000;
+  }
+  
+  /* 배경 및 베젤 */
+  .bezel {
+    position: absolute;
+    width: 393px;
+    height: 852px;
+    left: 0;
+    top: 0;
+  }
+  
+  .iphone-background {
+    position: absolute;
+    width: 473px;
+    height: 932px;
+    left: -40px;
+    top: -40px;
+    background: url('iPhone 15 Pro - Black Titanium - Portrait.png');
+  }
+  
+  /* 재료 검색 페이지 */
+  .rectangle-8 {
+    position: absolute;
+    width: 312px;
+    height: 69px;
+    left: 38px;
+    top: 99px;
+    background: #D9D9D9;
+    border: 1px solid #FFFBFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+  }
+  
+  .ingredient-input {
+    position: absolute;
+    width: 207px;
+    height: 58px;
+    left: 87px;
+    top: 123px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .line-14 {
+    position: absolute;
+    width: 348px;
+    height: 0;
+    left: 23px;
+    top: 576px;
+    border: 1px solid #000000;
+  }
+  
+  .quantity-control {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .quantity-control .minus,
+  .quantity-control .plus {
+    width: 36px;
+    font-size: 35px;
+  }
+  
+  .quantity-control .value {
+    width: 103px;
+    font-size: 23px;
+  }
+  
+  .quantity-control .minus {
+    left: 71px;
+    top: 625px;
+  }
+  
+  .quantity-control .value {
+    left: 165px;
+    top: 625px;
+  }
+  
+  .quantity-control .plus {
+    left: 284px;
+    top: 623px;
+  }
+  
+  .kimchi {
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 173px;
+    top: 505px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: -0.23px;
+    color: #000000;
+  }
+  
+  .nav-button {
+    position: absolute;
+    background: #F7C4E9;
+    border-radius: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFDFD;
+  }
+  
+  .previous {
+    width: 59px;
+    height: 23px;
+    left: 39px;
+    top: 726px;
+  }
+  
+  .previous-text {
+    left: 58px;
+    top: 726px;
+    width: 51px;
+  }
+  
+  .next {
+    width: 68px;
+    height: 21px;
+    left: 278px;
+    top: 726px;
+  }
+  
+  .next-text {
+    left: 10.17%;
+    right: -20.34%;
+    top: 4.35%;
+    bottom: 39.13%;
+  }
+  
+  .image-3 {
+    position: absolute;
+    width: 295px;
+    height: 215px;
+    left: 39px;
+    top: 225px;
+    background: url('image.png');
+  }
+  
+  .complete {
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    left: 302px;
+    top: 726px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFDFD;
+  }
+  
+  /* 냉장고 페이지 */
+  .fridge-title {
+    position: absolute;
+    width: 217px;
+    height: 30px;
+    left: 90px;
+    top: 223px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.23px;
+    color: #000000;
+  }
+  
+  .ingredient {
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: -0.23px;
+    color: #000000;
+  }
+  
+  .quantity {
+    position: absolute;
+    width: 97px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    letter-spacing: -0.23px;
+    color: #777777;
+  }
+  
+  .change-button {
+    position: absolute;
+    width: 59px;
+    height: 23px;
+    background: #F7C4E9;
+    border-radius: 9px;
+  }
+  
+  .change-text {
+    position: absolute;
+    width: 51px;
+    height: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #FFFDFD;
+  }
+  
+  .ingredient-image {
+    position: absolute;
+    width: 165px;
+    height: 116px;
+    background: url(image.png);
+    border-radius: 20px;
+  }
+  
+  /* 각 재료별 위치 조정 */
+  #egg { left: 219px; top: 301px; }
+  #egg-quantity { left: 209px; top: 339px; }
+  #egg-change { left: 285px; top: 378px; }
+  #egg-image { left: 14px; top: 284px; }
+  
+  #onion { left: 210px; top: 469px; }
+  #onion-quantity { left: 199px; top: 503px; }
+  #onion-change { left: 287px; top: 546px; }
+  #onion-image { left: 11px; top: 452px; width: 154px; height: 117px; }
+  
+  #kimchi { left: 209px; top: 628px; }
+  #kimchi-quantity { left: 193px; top: 666px; }
+  #kimchi-change { left: 292px; top: 702px; }
+  #kimchi-image { left: 10px; top: 620px; width: 155px; height: 115px; }
+  
+  .separator {
+    position: absolute;
+    width: 357px;
+    height: 0px;
+    left: 14px;
+    border: 1px solid #777777;
+  }
+  
+  #separator1 { top: 434px; }
+  #separator2 { top: 598px; }
